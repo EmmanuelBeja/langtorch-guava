@@ -1,0 +1,12 @@
+# If true, test will be executed with real HTTP request(Mainly for LLM client llm test).
+# requires API Key under .env under resources folder in Test Directory
+test:
+  unit-test:
+    live-traffic:
+      llm-service:
+        openai: false
+        minimax: false
+        cohere: false
+        huggingface: false
+      vector-store-service:
+        pinecone: false
